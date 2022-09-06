@@ -1,0 +1,843 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+html{
+    font-size:125%;
+    max-width:1920px;
+    font-family: 'Roboto', sans-serif;   
+    background-color:#F4F3F0;
+    overflow-x:hidden;
+}
+.tellus-background{
+    background:url(./Assets/image8.jpg);
+    background-size:cover;
+}
+.wrapper{
+    max-width:1920px;
+    width:90%;
+    margin:0 auto;
+}
+.logo{
+    text-transform:uppercase;
+    font-size:1.6rem;
+}
+.flexnav{
+    display:flex;
+    margin-bottom:50px;
+}
+.navleft, .navright{
+    width:50%
+}
+.navmenu{
+    text-transform:uppercase;
+    display:flex;
+    justify-content:flex-end;
+    margin-top:42px;
+}
+ul{
+    list-style-type:none;
+}
+nav li{
+    margin:0px 0px 0px 3.9vw;
+}
+.spacesheader{
+    display:flex;
+    justify-content:center;
+}
+h1{
+    font-weight: 600;
+    font-size:2.1rem;
+    text-align:center;
+    max-width:calc(100vw / 3);
+    font-weight:lighter;
+}
+.mainimg{
+    display:flex;
+    position:relative;
+}
+.badgeposition{
+    position:absolute;
+    top:-70px;
+    left:calc(90% / 2);
+}
+.livingroomimg{
+    background-image:url(./Assets/couch-crop.jpg);
+    margin-top:100px;
+    width:100%;
+    height:80vh;
+    background-repeat:no-repeat;
+}
+.ourplace-flex{
+    display:flex;
+}
+.ourplace-left{
+    width:30%;
+    margin:0 auto;
+    display:flex;
+    flex-flow:column wrap;
+}
+.ourplace-right{
+    width:30%;
+    margin:0 auto;
+    display:flex;
+    flex-flow:column wrap;
+    align-content:center;
+    margin-bottom:200px;
+}
+.kitchoverlap{
+    position:relative;
+}
+.kitchenimg{
+    display:inline-block;
+    max-width:400px;
+    max-height:400px;
+}
+.kitchen-one{
+    position:absolute;
+    top:150px;
+    right:200px;
+}
+h2{
+    font-weight: 600;
+    font-size:1.6rem;
+    margin-bottom:0px
+}
+.headerhr{
+    height:2px;
+    width:40px;
+    border: 0.5px solid #B18F39;
+    background-color:#B18F39;
+    margin-left:0;
+    margin-top:5px;
+}
+.sendmessage{
+    background-color:#B18F39;
+    color:#F4F3F0;
+    font-weight:lighter;
+    font-size:0.8rem;
+    width:200px;
+    padding: 10px 0;
+    text-align:center;
+    text-decoration:none;
+}
+.spotlight{
+    width:30%;
+    margin-left:9vw;
+    margin-bottom:50px;
+}
+.gallery-flex{
+    display:flex;
+    flex-flow:row wrap;
+}
+.gallery-one, .gallery-two, .gallery-three, .gallery-four, .gallery-five{
+    display:flex;
+    flex-flow:row wrap;
+    position:relative;
+}
+.gallerytop{
+    display:inline-block;
+    padding: 0 5vw;
+    width:calc((100vw - 20vw) / 2 );
+    max-height:300px;
+    margin-bottom: 20px;
+}
+.gallerybottom{
+    display:inline-block;
+    padding: 0 3vw;
+    width:calc((100vw - 18vw) / 3 );
+    max-height:300px;
+    margin-bottom:25px;
+}
+.address-elouise{
+    text-transform:uppercase;
+    background-color:#F4F3F0;
+    padding:20px;
+    position:absolute;
+    top:200px;
+    left:475px;
+}
+.address-grant{
+    text-transform:uppercase;
+    background-color:#F4F3F0;
+    padding:20px;
+    position:absolute;
+    top:200px;
+    left:458px;
+}
+.address-basil{
+    text-transform:uppercase;
+    background-color:#F4F3F0;
+    padding:20px;
+    position:absolute;
+    top:200px;
+    left:332px;
+}
+.address-jo{    
+    text-transform:uppercase;
+    background-color:#F4F3F0;
+    padding:20px;
+    position:absolute;
+    top:200px;
+    left:293px;
+}
+.address-rentea{
+    text-transform:uppercase;
+    background-color:#F4F3F0;
+    padding:20px;
+    position:absolute;
+    top:200px;
+    left:353px;
+}
+.tellus-div{
+        width:30%;
+        margin-left:14vw;
+        margin-bottom:50px;
+        padding: 25px 0px 0px 0px;
+}
+form{
+    display:inline-block;
+    width:50%;
+    margin-left:14vw;
+}
+.userid{
+    display:flex;
+    flex-flow:row nowrap;
+    margin-bottom:25px;
+    justify-content: space-between;
+}
+.username, .useremail{
+    display:flex;
+    flex-direction:column;
+    width:45%;
+    margin-bottom:25px;
+}
+.messagesubmit{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:25px;
+}
+input{
+    border:2px solid #B18F39;
+}
+textarea{
+    width: 100%;
+    height:300px;
+    border:2px solid #B18F39;
+}
+.formbutton{
+    margin-bottom:50px;
+}
+.reviewsection{
+    margin-top:50px;
+    margin-left:9vw;
+}
+.reviewborder{
+    border-left:5px solid #B18F39;
+    margin-left:0px;
+}
+.review{
+    width:30%;
+    margin-left:20px;
+}
+.svgflexbox{
+    margin-left:20px;
+    display:flex;
+    align-content:flex-start;
+}
+.referral{
+    display:flex;
+    justify-content:flex-start;
+    width:calc(100% / 3);
+}
+.ref-name-comp{
+    display:flex;
+    flex-direction:column;
+    margin-left:20px;
+}
+.referral-name{
+        font-weight:bold;
+        width:100%;
+        margin-bottom:0px;
+}
+.referral-company{
+        font-size:0.7rem;
+        width:100%;
+        margin-top:5px;
+}
+.jaimej{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+svg{
+    width:calc(100% / 3);
+    margin:60px 0px 0px 5vw;
+}
+.officeimg{
+    background-image:url(./Assets/image9-crop.jpg);
+    margin-top:100px;
+    width: 100%;
+    height:550px;
+    background-size:100%;
+    background-repeat:no-repeat;
+}
+.bottomnav{
+    display:flex;
+}
+.bottomnav-left{
+    margin-top:50px;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+.addresswrapping{
+    width:25%;
+}
+.bottomnav-left h3{
+    margin:22px 0px 32px 0px;
+}
+.bottomnav-left p{
+    margin:10px 0px;
+}
+.bottomnav-right{
+    margin-top:50px;
+    display:flex;
+    justify-content:space-evenly;
+    width:50%;
+}
+.finalnav{
+    display:flex;
+    flex-direction: column;
+    align-content:space-evenly;
+    padding-left:0px;
+}
+.finalnav li{
+    padding:10px 0px;
+}
+.footerhr{
+    margin-top:20px;
+    height:2px;
+    width:100%;
+    background-color:#9C9B98;
+    opacity:0.2;
+}
+footer p{
+    color:#9C9B98;
+    font-weight:600;
+    opacity:0.6;
+}
+footer a{
+    text-decoration:none;
+}
+
+/* MEDIA QUERIES *************************************************************************************/
+
+/* MOBILE NAV BAR****************************************/
+@media (max-width:604px){
+        .navright{
+            display:none;
+        }
+        .mobile-menu{
+            font-size:1.4rem;
+            border-top:2px solid black;
+            border-bottom:2px solid black;
+            margin:30px 0px 0px 40vw;
+        }
+}
+@media (min-width:605px){
+    .mobile-menu{
+        display:none;
+    }
+}
+/* MOBILE **********************************************/
+@media (max-width:389px){
+    h1{
+        max-width:100%;
+        font-size:1.2rem;
+    }
+    h2{
+        font-size:1.45rem;
+    }
+    .livingroomimg{
+        background-image:url(./Assets/header.jpg);
+        background-size:contain;
+        background-repeat:no-repeat;
+        margin:50px 0px -50px 0px;
+        height:40vh;
+    }
+    .badgeposition{
+        top:-17%;
+        left:33%;
+    }
+    .badgeposition img{
+        height:75%;
+        width:75%;
+    }
+    .ourplace-flex{
+        flex-direction:column;
+        margin-top:0px;
+    }
+    .ourplace-left, .ourplace-right{
+        margin:0px;
+        width:100%;
+        margin-bottom:20px;
+    }
+    .ourplace-left hr{
+        margin:0px;
+    }
+    .ourplace-left p{
+        width:100%;
+    }
+    .headerhr{
+        width:70px;
+    }
+    .kitchenimg{
+        max-width:65%;
+        margin-left:90px;
+    }
+    .kitchen-one{
+        max-width:50%;
+        top:70px;
+        right:150px;
+    }
+    .spotlight{
+        width:100%;
+        margin: 100px 0px 50px 0px;
+    }
+    .gallery-flex{
+        padding:0px;
+    }
+    .gallerytop{
+        width:90vw;
+        margin-bottom: 45px;
+        padding:0px;
+        height:254px;
+    }
+    .gallerybottom{
+        width:90vw;
+        padding:0px;
+        margin-bottom:45px;
+    }
+    .address-elouise, .address-grant{
+        text-align:left;
+        padding:10px;
+        top:234px;
+        left:0px;
+    }
+    .address-basil, .address-jo, .address-rentea{
+        text-align:left;
+        padding:10px;
+        top:280px;
+        left:0px;
+    }
+    .tellus-div{
+        width:90vw;
+        margin:0px 0px 50px 0px;
+        padding: 25px 0px 0px 0px;
+    }
+    form{
+        width:100%;
+        margin:0px
+    }
+    .userid{
+        flex-direction:column;
+    }
+    .username, .useremail{
+        flex-direction:column;
+        width:100%;
+    }
+    input{
+        height:50px;
+    }
+    textarea{
+        width: 100%;
+        height:200px;
+    }
+    .messagesubmit{
+        margin-top:-20px;
+    }
+        .review{
+        width:100%;
+        margin-left:20px;
+    }
+    .ref-name-comp, .referral-name, .referral-company{
+        width:100vw;
+    }
+    .svgflexbox{
+        position:relative;
+        margin-left:20px;
+    }
+    .referral{
+        font-size:1.2rem;
+    }
+    svg{
+        position:absolute;
+        bottom:0px;
+        right:0px;
+    }
+    .officeimg{
+        background-image:url(./Assets/image9.jpg);
+        background-size:contain;
+        background-repeat:no-repeat;
+        height:40vh;
+        margin-bottom:-100px;
+    }
+    .bottomnav{
+        flex-direction:column;
+    }
+    .bottomnav-left, .addresswrapping{
+        width:100%
+    }
+    .mobilefooterhr{
+        margin-top:25px;
+        height:2px;
+        width:100%;
+        background-color:#9C9B98;
+        opacity:0.2;
+    }
+    .bottomnav-right{
+        flex-direction:column;
+        margin-top:0px;
+    }
+    .finalnav{
+        flex-direction:row;
+        width:100vw;
+    }
+    .finalnav li{
+        padding:10px 15px 0px 0px;
+}
+}
+/* MOBILE #2********************************************** */
+
+@media (min-width:390px) and (max-width:414px){
+    h1{
+        font-size:1.6rem;
+        max-width:90%;
+    }
+    h2{
+        margin-bottom:5px;
+    }
+    .badgeposition{
+        position:absolute;
+        top:-70px;
+        left:calc(90% / 3);
+    }
+    .livingroomimg{
+        background-image:url(./Assets/header.jpg);
+        background-size:contain;
+        background-repeat:no-repeat;
+        margin-bottom:-50px;
+        height:40vh;
+    }
+    .ourplace-flex{
+        flex-direction:column;
+        margin-top:0px;
+    }
+    .ourplace-left, .ourplace-right{
+        margin:0px;
+        width:100%;
+        margin-bottom:20px;
+    }
+    .ourplace-left hr{
+        margin:0px;
+    }
+    .ourplace-left p{
+        width:100%;
+    }
+    .headerhr{
+        width:70px;
+    }
+    .kitchenimg{
+        max-width:70%;
+        margin-left:100px;
+    }
+    .kitchen-one{
+        max-width:60%;
+        top:70px;
+        right:150px;
+    }
+    .spotlight{
+        width:100%;
+        margin: 100px 0px 50px 0px;
+    }
+    .gallery-flex{
+        padding:0px;
+    }
+    .gallerytop{
+        width:90vw;
+        margin-bottom: 45px;
+        padding:0px;
+        height:254px;
+    }
+    .gallerybottom{
+        width:90vw;
+        padding:0px;
+        margin-bottom:45px;
+    }
+    .address-elouise, .address-grant{
+        text-align:left;
+        padding:10px;
+        top:234px;
+        left:0px;
+    }
+    .address-basil, .address-jo, .address-rentea{
+        text-align:left;
+        padding:10px;
+        top:280px;
+        left:0px;
+    }
+    .tellus-div{
+        width:100vw;
+        margin:0px 0px 50px 0px;
+        padding: 25px 0px 0px 0px;
+    }
+    form{
+        width:100%;
+        margin:0px
+    }
+    .userid{
+        flex-direction:column;
+    }
+    .username, .useremail{
+        flex-direction:column;
+        width:100%;
+    }
+    input{
+        height:50px;
+    }
+    textarea{
+        width: 100%;
+        height:200px;
+    }
+    .messagesubmit{
+        margin-top:-20px;
+    }
+    .review{
+        width:100%;
+        margin-left:20px;
+    }
+    .ref-name-comp, .referral-name, .referral-company{
+        width:100vw;
+    }
+    .svgflexbox{
+        position:relative;
+        margin-left:20px;
+    }
+    .referral{
+        font-size:1.2rem;
+    }
+    svg{
+        position:absolute;
+        bottom:0px;
+        right:0px;
+    }
+    .officeimg{
+        background-image:url(./Assets/image9.jpg);
+        background-size:contain;
+        background-repeat:no-repeat;
+        height:40vh;
+        margin-bottom:-100px;
+    }
+    .bottomnav{
+        flex-direction:column;
+    }
+    .bottomnav-left, .addresswrapping{
+        width:100%
+    }
+    .mobilefooterhr{
+        margin-top:25px;
+        height:2px;
+        width:100%;
+        background-color:#9C9B98;
+        opacity:0.2;
+    }
+    .bottomnav-right{
+        flex-direction:column;
+        margin-top:0px;
+    }
+    .finalnav{
+        flex-direction:row;
+        width:100vw;
+    }
+    .finalnav li{
+        padding:10px 30px 0px 0px;
+}
+}
+
+
+/* EXPERIMENTS*************************************************************************************************************** */
+
+/* TABLET */
+
+@media (min-width:415px) and (max-width:714px){
+    h1{
+        max-width:100vw;
+    }
+}
+
+@media (min-width:715px) and (max-width:768px){
+    h1{
+        max-width:80vw;
+    }
+    .badgeposition{
+        left:40%;
+    }
+    .livingroomimg{
+        background-image:url(./Assets/header.jpg);
+        background-size:contain;
+        background-repeat:no-repeat;
+        height:60vh;
+        margin-bottom:-50px;
+    }
+    .ourplace-left, .ourplace-right{
+        margin:0px;
+        width:50%;
+        margin-bottom:20px;
+    }
+    .kitchenimg{
+        max-width:75%;
+        max-height:100%;
+        margin-left:90px;
+    }
+    .kitchen-one{
+        top:90px;
+        right:120px;
+    }
+    .spotlight{
+        width:100%;
+        margin: 100px 0px 50px 0px;
+    }
+    .gallery-flex{
+        padding:0px;
+        justify-content: space-around;
+    }
+    .gallerytop{
+        width:39vw;
+        margin-bottom:45px;
+        padding:0px;
+        height:40vh;
+    }
+    .gallerybottom{
+        width:27vw;
+        padding:0px;
+        margin-bottom:45px;
+    }
+    .address-elouise{
+        text-align:left;
+        padding:10px;
+        top:225px;
+        left:122px;
+    }
+    .address-grant{
+        text-align:left;
+        padding:10px;
+        top:225px;
+        left:105px;
+    }
+    .address-basil{
+        text-align:left;
+        padding:10px;
+        top:163px;
+        left:92px;
+    }
+    .address-jo{
+        text-align:left;
+        padding:10px;
+        top:163px;
+        left:53px;
+    }
+    .address-rentea{
+        text-align:left;
+        padding:10px;
+        top:163px;
+        left:113px;
+    }
+    .tellus-div{
+        margin-left:0px;
+        width:100vw;
+    }
+    form{
+        margin-left:0px;
+        width:90vw;
+    }
+    .userid{
+        margin-top:-10px;
+        margin-bottom: -25px
+    }
+    input{
+        height:50px;
+    }
+    .review{
+        width:90vw;
+    }
+    .referral{
+        width:90vw;
+    }
+    .officeimg{
+        height:60vh;
+        margin-bottom:-400px;
+    }
+    .bottomnav-left{
+        width:35%;
+    }
+    .addresswrapping{
+        width:80%;
+    }
+    .bottomnav-right{
+        width:65%;
+    }
+    .footerhr{
+        margin-top:0px;
+    }
+}
+    
+/* 1366*768 DESKTOP ***************************************************************/
+
+@media (min-width:769px) and (max-width:1366px){
+    h1{
+        max-width:50vw;
+    }
+    .livingroomimg{
+        background-size:contain;
+        background-repeat:no-repeat;
+        height:60vh;
+        margin-bottom:50px;
+    }
+    .address-elouise{
+        text-align:left;
+        padding:10px;
+        top:215px;
+        left:301px;
+    }
+    .address-grant{
+        text-align:left;
+        padding:10px;
+        top:215px;
+        left:284px;
+    }
+    .address-basil{
+        text-align:left;
+        padding:10px;
+        top:220px;
+        left:218px;
+    }
+    .address-jo{
+        text-align:left;
+        padding:10px;
+        top:220px;
+        left:178px;
+    }
+    .address-rentea{
+        text-align:left;
+        padding:10px;
+        top:220px;
+        left:238px;
+    }
+    .officeimg{
+        margin-bottom:-100px;
+    }
+}

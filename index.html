@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<!-- NOTES: For sizing I am under the impression we needed to match mobile and desktop, 
+        Desktop: 1920x1080px    Mobile 360px800 & 414x896
+    *******************the rest is me fiddling with ranges for my own experimenting -->
+
+
+<!-- Notes from last project to correct this time:
+                    MOVE ALL IMAGE ASSETS TO ONE FOLDER
+                    TWEAK MAIN WRAP TO SET AMOUNT NOT 100VW
+                    "DRY" CSS ex Font / styling class 
+                    
+                    Clean/organize Code
+                    More accessibility with alt tags?
+                    img element vs background image
+                    correctly use wrappers and containers-->
+                    
+<body>
+    <div class="wrapper flexnav">
+        <div class="navleft">
+            <p class="logo">Spaces</p>
+        </div>
+        <nav class="navright-mobile">
+            <p class="mobile-menu">Menu</p>
+        </nav>
+        <nav class="navright">
+            <ul class="navmenu">
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Services</li>
+                <li><a href="#"></a>Projects</li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <div class="spacesheader">
+            <h1>Spaces is an architecture studio based in Toronto, Canada</h1>
+        </div>
+        <section class="wrapper">
+            <div class="mainimg  livingroomimg">
+                <div class="badgeposition">
+                    <img src="./Assets/badge.png" alt="Best studio of the year badge">
+                </div>
+            </div>
+        </section>
+    </header>
+    </body>
+        <main>
+            <section class="wrapper">
+                <div class="ourplace-flex">
+                    <article class="ourplace-left">
+                        <h2>Our Practice</h2>
+                        <hr class="headerhr">
+                        <p>Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage charms. Energy healing pendulum meditate divination practitioner candles chanting massage Buddha. Divine Light Worker herbalist, lavender love compassion practitioner pendulum massage fibonnaci sage. Dance peace angels awakening. Love Flower of Life tarot shamantic. Quartz spirit guides divination peace, herbalist chakra clearing full moon shaman</p>
+                        <a href="#tellus" class="sendmessage">Send Message</a>
+                    </article>
+                    <article class="ourplace-right">
+                        <ul class="kitchoverlap">
+        <!-- image 1 goes in front of image 2 -->
+                            <li><img src="./Assets/image2-crop.jpg" alt="View of the same kitchen looking to the right showing the rest of the island and a sink" class="kitchenimg"></li>
+                            <li><img src="./Assets/image1-crop.jpg" alt="View of a white kitchen with an island and barstools, looking left to another room" class="kitchenimg kitchen-one"></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section class="wrapper">
+                <div class="spotlight">
+                    <h2>Spotlight</h2>
+                    <hr class="headerhr">
+                    <p>Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage charms.</p>
+                </div>
+                <div>
+                    <ul class="gallery-flex">
+                        <li class="gallery-one"><img src="./Assets/image3-crop.jpg" alt="White marble kitchen with double ovens, sinks and island with bar stools." class="gallerytop">
+                            <p class="address-elouise">Elouise Avenue</p>
+                        </li>
+                        <li class="gallery-two"><img src="./Assets/image4-crop.jpg" alt="Outdoor view of a housing property with a person walking a dog out front." class="gallerytop">
+                        <p class="address-grant">Grant Residence</p>
+                        </li>
+                        <li class="gallery-three"><img src="./Assets/image5-crop.jpg" alt="Room with pinic bench like tables and several low hanging lights." class="gallerybottom">
+                        <p class="address-basil">Basil Lab</p>
+                        </li>
+                        <li class="gallery-four"><img src="./Assets/image6-crop.jpg" alt="Low hanging light fixture over a table with stairs up in the background." class="gallerybottom">
+                        <p class="address-jo">Jo Residence</p>
+                        </li>
+                        <li class="gallery-five"><img src="./Assets/image7-crop.jpg" alt="Stone room decorated with wooden tables and potted plants" class="gallerybottom">
+                        <p class="address-rentea">Rentea</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="tellus-background">
+                <section class="wrapper">
+                    <div class="tellus-div" id="tellus">
+                        <h2>Tell us about your ideas</h2>
+                        <hr class="headerhr">
+                        <p>Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage charms.</p>
+                    </div>
+                    <form action="#" method="#" name="myForm" class="emailform">
+                        <div class="userid">
+                            <div class="username">
+                                <label for="userName">Name</label>
+                                <input type="text" id="userName" name="userName">
+                            </div>
+                            <div class="useremail">
+                                <label for="userEmail">Email</label>
+                                <input type="text" id="userEmail" name="userEmail">
+                            </div>
+                        </div>
+                        <div class="messagesubmit">
+                            <label for="message">Message</label>
+                            <textarea name="userMessage" id="userMessage" class="userMessage"></textarea>
+                        </div>
+                        <button type="submit" class="sendmessage formbutton">Send Message</button>
+                    </form>
+                </section>
+            </section>
+            <section class="wrapper">
+                <div class="reviewsection">
+                    <h2>Words from our clients</h2>
+                    <hr class="headerhr">
+                    <div class="reviewborder">
+                        <p class="review">Spaces were an incredible team of passionate creatives, who truly transformed our space into a beautiful sanctuary.</p>
+                        <div class="svgflexbox">
+                            <div class="referral">
+                                <img src="./Assets/image10.jpg" alt="Image of Jaime Jorge" class="jaimej">
+                                <div class="ref-name-comp">
+                                    <p class="referral-name">Jaime Jorge</p>
+                                    <p class="referral-company">Founder, RENTEA</p>
+                                </div>
+                            </div>
+                            <svg width="111" height="16" viewBox="0 0 111 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M110.707 8.70711C111.098 8.31658 111.098 7.68342 110.707 7.29289L104.343 0.928932C103.953 0.538408 103.319 0.538408 102.929 0.928932C102.538 1.31946 102.538 1.95262 102.929 2.34315L108.586 8L102.929 13.6569C102.538 14.0474 102.538 14.6805 102.929 15.0711C103.319 15.4616 103.953 15.4616 104.343 15.0711L110.707 8.70711ZM0 9H110V7H0V9Z" fill="#B18F39"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper">
+                <div class="officeimg">
+                </div>
+            </section>
+            <section class="wrapper bottomnav">
+                <div class="bottomnav-left">
+                    <h3 class="logo">Spaces</h3>
+                    <p class="addresswrapping">129 Jordan Ave, Toronto, CA M22 324</p>
+                    <p>(232) - 222 - 2522</p>
+                    <p>info@spaces-studio.com</p>
+                    <hr class="mobilefooterhr">
+                </div>
+                <div class="bottomnav-right">
+                    <div>
+                        <h3>Menu</h3>
+                        <ul class="finalnav">
+                            <li><a href="#"></a>Services</li>
+                            <li><a href="#"></a>Who We Are</li>
+                            <li><a href="#"></a>Contact</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Projects</h3>
+                        <ul class="finalnav">                           
+                            <li><a href="#"></a>Residential</li>
+                            <li><a href="#"></a>Commercial</li>
+                            <li><a href="#"></a>Conceptual</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Follow</h3>
+                        <ul class="finalnav">                            
+                            <li><a href="https://www.instagram.com">Instagram</a></li>
+                            <li><a href="https://www.youtube.com">Youtube</a></li>
+                            <li><a href="#"></a>Houzz</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer class="wrapper">
+                <hr class="footerhr">
+                <p>Created at <a href="https://www.junocollege.com">Juno College of Technology</a></p>
+            </footer>
+        </main>
+</html>
